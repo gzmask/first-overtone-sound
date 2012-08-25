@@ -1,0 +1,19 @@
+# first_noise
+
+first overtone app
+
+
+## Usage
+before: 
+lein deps
+
+first run:
+jackd -r -d alsa -r 44100 &
+
+then run:
+lein repl
+
+and finally:
+(load-file "song.clj")
+
+Distributed under the Eclipse Public License, the same as Clojure.
