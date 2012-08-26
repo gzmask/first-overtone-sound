@@ -1,19 +1,18 @@
 # first_noise
-
 first overtone app
 
 
 ## Usage
-before: 
+pull dependencies: 
 lein deps
 
-first run:
-jackd -r -d alsa -r 44100 &
+first install nailgun:
+lein plugin install lein-tarsier 0.9.1
 
-then run:
-lein repl
+then start vimclojure:
+lein vimclojure
 
 and finally:
-(load-file "song.clj")
+vim *.clj
 
 Distributed under the Eclipse Public License, the same as Clojure.
